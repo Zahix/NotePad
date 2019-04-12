@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/Theme.AppCompat.NoActionBar">
+    <RelativeLayout
+        android:gravity="center"
+        android:id="@+id/header"
+        android:background="@color/green"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:maxLines="1"
+            android:id="@+id/dialog_title_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:text="File Name"
+            android:textColor="@color/black"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+
+
+        <EditText
+            android:layout_centerHorizontal="true"
+            android:hint="e.g File,ABC"
+            android:id="@+id/dialog_name_ET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <Button
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:id="@+id/dialog_submit_btn"
+            android:layout_below="@+id/dialog_name_ET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"/>
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
